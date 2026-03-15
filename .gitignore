@@ -1,5 +1,5 @@
-# Binaries
-zivpn-panel
+# Binaries (only at repo root)
+/zivpn-panel
 *.exe
 *.exe~
 *.dll
