@@ -74,11 +74,9 @@ func handleInstall() {
 		zivpn.RemoveZivpn()
 	}
 
-	port := ui.ReadInt("Puerto UDP para ZiVPN", 1000, 65535)
-	portStr := fmt.Sprintf("%d", port)
-
+	portStr := zivpn.DefaultPort
 	fmt.Println()
-	ui.ShowInfo("Instalando ZiVPN en el puerto " + portStr + "...")
+	ui.ShowInfo("Instalando ZiVPN en el puerto " + portStr + " (automático)...")
 	fmt.Println()
 
 	if err := zivpn.InstallZivpn(portStr); err != nil {

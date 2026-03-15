@@ -12,6 +12,7 @@ const (
 	UsersFile   = "/etc/zivpn/users.json"
 	BinaryPath  = "/usr/local/bin/zivpn"
 	ServiceName = "zivpn.service"
+	DefaultPort = "5667"
 )
 
 // ZivpnConfig represents the daemon's native config.json
